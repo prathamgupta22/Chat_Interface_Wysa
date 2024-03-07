@@ -11,10 +11,13 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("/api/v1/users/login", {
-        email,
-        password,
-      });
+      const response = await axios.post(
+        "https://chat-interface-wysa.onrender.com/api/v1/users/login",
+        {
+          email,
+          password,
+        }
+      );
 
       if (response.data.status) {
         navigate("/chat");
