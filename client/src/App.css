@@ -64,14 +64,6 @@ button:hover {
 
 /* Home page */
 
-.chat-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: linear-gradient(239.26deg, #ddeeed 63.17%, #fdf1e0 94.92%);
-}
-
 .chat-box {
   background-color: #f0f0f0;
   border-radius: 8px;
@@ -85,13 +77,6 @@ button:hover {
 }
 
 /* chat page */
-.chat-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: linear-gradient(239.26deg, #ddeeed 63.17%, #fdf1e0 94.92%);
-}
 
 .home-container {
   display: flex;

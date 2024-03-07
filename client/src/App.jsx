@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 import Chatcomp from "./components/Chatcomp";
 import ForgotPage from "./pages/ForgotPage";
 import ResetPassword from "./components/ResetPassword";
+import Trychatpage from "./pages/TryChat";
 
 const App = () => {
   return (
@@ -21,6 +22,8 @@ const App = () => {
         <Route path="/chat" element={<Chatcomp />} />
         <Route path="/forgotPassword" element={<ForgotPage />} />
         <Route path="/resetPassword/:token" element={<ResetPassword />} />
+
+        <Route path="/trychat" element={<Trychatpage />} />
       </Routes>
     </>
   );

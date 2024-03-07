@@ -6,9 +6,9 @@ import { BrowserRouter as Router } from "react-router-dom";
 import axios from "axios";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <>
     <Router>
       <App />
     </Router>
-  </React.StrictMode>
+  </>
 );

@@ -1,0 +1,67 @@
+.container {
+  background: linear-gradient(239.26deg, #ddeeed 63.17%, #fdf1e0 94.92%);
+  /* display: flex;
+  flex-direction: column; */
+  min-height: 100vh;
+  padding-bottom: 5rem;
+}
+.inputMessage {
+  width: 60%;
+  margin: auto;
+  position: fixed;
+  bottom: 10px;
+  left: 17rem;
+}
+.user-message {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: flex-end;
+  gap: 10px;
+  padding-top: 1rem;
+}
+.inputMessage input {
+  width: 70%;
+  background-color: transparent;
+  outline: none;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.inputMessage button {
+  width: 8rem;
+  margin-left: 10px;
+}
+.chat-container {
+  /* border: 1px solid black; */
+
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: flex-start;
+  gap: 10px;
+  padding-top: 1rem;
+}
+.bubble {
+  max-width: 17rem;
+  background-color: white;
+  padding: 8px 24px;
+  font-size: 12px;
+  border-radius: 0px 15px 15px 15px;
+  padding-left: 8px;
+}
+.bubble-user {
+  max-width: 17rem;
+  background-color: rgb(175, 105, 241);
+  padding: 8px 24px;
+  font-size: 12px;
+  border-radius: 15px 0px 15px 15px;
+}
+.bubble img {
+  width: 30px;
+  vertical-align: middle;
+  margin-right: 5px;
+}

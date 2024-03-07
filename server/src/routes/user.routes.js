@@ -128,6 +128,7 @@ const verifyUser = async (req, res, next) => {
       return res.json({ status: false, message: "no token" });
     }
     const decoded = await jwt.verify(token, process.env.KEY);
+
     next();
   } catch (error) {
     return res.json(error);
