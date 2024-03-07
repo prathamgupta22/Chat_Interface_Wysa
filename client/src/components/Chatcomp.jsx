@@ -17,16 +17,16 @@ const Chatcomp = () => {
   axios.defaults.withCredentials = true;
 
   useEffect(() => {
-    // axios
-    //   .get("https://chat-interface-wysa.onrender.com/api/v1/users/verify")
-    //   .then((res) => {
-    //     if (res.data.status) {
-    //       console.log("Sajoi j");
-    //     } else {
-    //       console.log("cookie isssue");
-    //       navigate("/");
-    //     }
-    //   });
+    axios
+      .get("https://chat-interface-wysa.onrender.com/api/v1/users/verify")
+      .then((res) => {
+        if (res.data.status) {
+          console.log("Sajoi j");
+        } else {
+          console.log("cookie isssue");
+          navigate("/");
+        }
+      });
     socket.on("connect", () => {
       console.log("connected", socket.id);
     });

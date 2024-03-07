@@ -9,7 +9,7 @@ const LogoutButton = () => {
 
   const handleLogout = () => {
     axios
-      .get("api/v1/users/logout")
+      .get("https://chat-interface-wysa.onrender.com/api/v1/users/logout")
       .then((res) => {
         navigate("/login");
       })
@@ -17,6 +17,7 @@ const LogoutButton = () => {
         console.log(err);
       });
   };
+
   return (
     <div>
       <button

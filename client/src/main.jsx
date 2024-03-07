@@ -7,6 +7,7 @@ import axios from "axios";
 
 // axios.defaults.baseURL = "https://chat-interface-wysa.onrender.com";
 
+axios.defaults.withCredentials = true;
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
     <Router>
