@@ -14,11 +14,14 @@ const Register = () => {
     e.preventDefault();
     try {
       const response = await axios
-        .post("/api/v1/users/register", {
-          username,
-          email,
-          password,
-        })
+        .post(
+          "https://chat-interface-wysa.onrender.com/api/v1/users/register",
+          {
+            username,
+            email,
+            password,
+          }
+        )
         .then((response) => {
           if (response.data.status) {
             navigate("/login");

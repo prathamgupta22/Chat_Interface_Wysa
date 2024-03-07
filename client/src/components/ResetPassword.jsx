@@ -10,9 +10,13 @@ const ResetPassword = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("/api/v1/users/resetPassword/" + token, {
-        password: password,
-      })
+      .post(
+        "https://chat-interface-wysa.onrender.com/api/v1/users/resetPassword/" +
+          token,
+        {
+          password: password,
+        }
+      )
       .then((response) => {
         if (response.data.status) {
           navigate("/login");

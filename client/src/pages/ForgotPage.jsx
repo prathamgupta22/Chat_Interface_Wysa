@@ -10,9 +10,12 @@ const ForgotPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("/api/v1/users/forgotPassword", {
-        email,
-      })
+      .post(
+        "https://chat-interface-wysa.onrender.com/api/v1/users/forgotPassword",
+        {
+          email,
+        }
+      )
       .then((response) => {
         if (response.data.status) {
           alert("check your mail for reset password link");
