@@ -1,18 +1,19 @@
 import React from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
+import LogoutButton from "../components/LogoutButton";
 const Home = () => {
   return (
-    <div className="chat-container">
-      <div className="chat-box">
-        <div className="chat-message">Welcome to Wysa AI Chat App!</div>
-      </div>
-      <button>
-        <Link to="/chat">CHAT PAGE</Link>
+    <div className="home-container">
+      <div className="welcome-text">Welcome to Wysa AI Chat App!</div>
+      <button className="chat-button">
+        <Link to="/chat" className="link">
+          CHAT PAGE
+        </Link>
       </button>
-      <br />
-      <br />
-      <button>Logout</button>
+      <div className="logout-container">
+        <LogoutButton />
+      </div>
     </div>
   );
 };

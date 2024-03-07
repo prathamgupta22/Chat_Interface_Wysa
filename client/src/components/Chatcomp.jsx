@@ -7,14 +7,14 @@ const Chatcomp = () => {
   axios.defaults.withCredentials = true;
 
   useEffect(() => {
-    axios.get("http://localhost:8000/users/verify").then((res) => {
+    axios.get("api/v1/users/verify").then((res) => {
       if (res.data.status) {
       } else {
         navigate("/");
       }
     });
   }, []);
-  return <div>Chatcomp</div>;
+  return <div className="chat-container">Chatcomp</div>;
 };
 
 export default Chatcomp;

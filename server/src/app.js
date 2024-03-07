@@ -1,8 +1,10 @@
 import express from "express";
 import cors from "cors";
-
 import cookieParser from "cookie-parser";
+import { Server } from "socket.io";
+
 const app = express();
+const server = new Server(app);
 
 app.use(
   cors({

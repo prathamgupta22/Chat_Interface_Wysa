@@ -17,7 +17,7 @@ const Login = () => {
       });
 
       if (response.data.status) {
-        navigate("/home");
+        navigate("/chat");
       } else {
         console.log("Login failed:", response.data.message);
       }
