@@ -11,7 +11,7 @@ const Chatcomp = () => {
   const [userMessage, setUserMessage] = useState([]);
   const [inputMessage, setInputMessage] = useState("");
 
-  const socket = io("http://localhost:8000/");
+  const socket = io("https://chat-interface-wysa.onrender.com/");
 
   const navigate = useNavigate();
   axios.defaults.withCredentials = true;
