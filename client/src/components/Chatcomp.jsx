@@ -17,7 +17,7 @@ const Chatcomp = () => {
   axios.defaults.withCredentials = true;
 
   useEffect(() => {
-    axios.get("api/v1/users/verify").then((res) => {
+    axios.get("/verify").then((res) => {
       if (res.data.status) {
       } else {
         navigate("/");
